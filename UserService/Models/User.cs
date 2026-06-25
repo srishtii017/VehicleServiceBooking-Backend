@@ -17,7 +17,7 @@ namespace User_Management.Models
 
         [Required(ErrorMessage = "Phone is required.")]
         [Phone(ErrorMessage = "Invalid phone number.")]
-        [StringLength(13, MinimumLength = 10, ErrorMessage = "Phone must be between 10 and 13 characters.")]
+        [StringLength(13, MinimumLength = 10, ErrorMessage = "Phone must be exactly 10 digits.")]
         public string Phone { get; set; }
 
 

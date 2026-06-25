@@ -1,4 +1,5 @@
-﻿using BookingService.DTO;
+﻿using System.Net.Http.Headers;
+using BookingService.DTO;
 using BookingService.Model;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +18,7 @@ namespace BookingService.Services
             _httpclientfactory = httpclientfactory;
         }
 
-        public async Task<Booking> CreateBookingAsync(int userId, CreateBookingDTO dto)
+        public async Task<Booking> CreateBookingAsync(int userId, CreateBookingDTO dto,string token)
         {
             try
             {
@@ -31,6 +32,12 @@ namespace BookingService.Services
                 var client = _httpclientfactory.CreateClient();
                 client.BaseAddress = new Uri("http://localhost:5226");
 
+                string cleanToken = token.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase)
+                    ? token.Substring(7) 
+                    : token.Replace("bearer ", "", StringComparison.OrdinalIgnoreCase).Trim(); 
+                
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", cleanToken);
+
                 var response = await client.GetAsync($"/api/User/{userId}");
 
                 var result = await response.Content.ReadFromJsonAsync<ApiResponse<User>>();
@@ -43,14 +50,13 @@ namespace BookingService.Services
                 {
                     BookingId = bookingId,
                     UserId = userId,
-                    CustomerName = dto.CustomerName,
+                    CustomerName = result.Data.Name,
                     VehicleName = dto.VehicleName,
                     VehicleNo = dto.VehicleNo,
-                    VehicleType = dto.VehicleType,
                     ServiceCenterId = dto.ServiceCenterId,
                     Phone_No = result.Data.Phone,
                     Email = result.Data.Email,
-                    Address = result.Data.Address,
+                    Address = $"{result.Data.FlatNumber}, {result.Data.Street}, {result.Data.City}, {result.Data.State}, {result.Data.Pincode}",
                     ServiceType = dto.ServiceType,
                     CreatedDate = DateTime.Now,
                     ServiceDate = dto.ServiceDate,
@@ -101,9 +107,9 @@ namespace BookingService.Services
                     return null;
                 }
 
-                if (!string.IsNullOrEmpty(dto.ServiceType) && !string.IsNullOrEmpty(dto.VehicleType)){
+                if (!string.IsNullOrEmpty(dto.ServiceType) && !string.IsNullOrEmpty(dto.VehicleName)){
                     booking.ServiceType = dto.ServiceType;
-                    booking.VehicleType = dto.VehicleType;
+                    booking.VehicleName = dto.VehicleName;
                     booking.VehicleNo = dto.VehicleNo;
                 }
                 
@@ -156,7 +162,7 @@ namespace BookingService.Services
                     {
                         BookingId = b.BookingId,
                         VehicleNo = b.VehicleNo,
-                        VehicleType = b.VehicleType,
+                        VehicleName = b.VehicleName,
                         ServiceCenterId = b.ServiceCenterId,
                         ServiceType = b.ServiceType,
                         ServiceDate = b.ServiceDate,

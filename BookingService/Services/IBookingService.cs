@@ -5,7 +5,7 @@ namespace BookingService.Services
 {
     public interface IBookingService
     {
-        Task<Booking> CreateBookingAsync(int userId, CreateBookingDTO dto);
+        Task<Booking> CreateBookingAsync(int userId, CreateBookingDTO dto,string token);
         Task<Booking?> GetBookingByIdAsync(int id, int userId);
         Task<Booking?> UpdateBookingAsync(int userId,UpdateBookingDTO dto);
         Task<bool> CancelBookingAsync(string id, int userId);

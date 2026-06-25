@@ -5,7 +5,7 @@ namespace BookingService.DTO
     public class GetBookingDTO
     {
         public string? BookingId { get; set; }
-        public string? VehicleType { get; set; }
+        public string? VehicleName { get; set; }
         public string? VehicleNo { get; set; }
         public string ServiceCenterId { get; set; }
         public string ServiceType { get; set; } = string.Empty;

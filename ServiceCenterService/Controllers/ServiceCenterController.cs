@@ -44,6 +44,7 @@ namespace ServiceCenterService.Controllers
 
 
         [HttpGet("get-centers")]
+        //[Authorize(Roles = "User")]
         public async Task<IActionResult> GetAllCenters()
         {
             var response = await _service.GetAllCenters();

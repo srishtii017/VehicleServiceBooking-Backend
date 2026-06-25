@@ -18,7 +18,6 @@ namespace BookingService.Model
         public string? CustomerName { get; set;  }
         public string? VehicleName { get; set; }
         public string? VehicleNo {get;set;}
-        public string? VehicleType { get; set; }
         public string ServiceCenterId { get; set; }
         public string? Phone_No {get; set; }
         public string? Email { get; set; }

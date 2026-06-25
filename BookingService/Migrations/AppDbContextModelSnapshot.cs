@@ -42,8 +42,9 @@ namespace BookingService.Migrations
                     b.Property<string>("Phone_No")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ServiceCenterId")
-                        .HasColumnType("int");
+                    b.Property<string>("ServiceCenterId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateOnly>("ServiceDate")
                         .HasColumnType("date");
@@ -63,9 +64,6 @@ namespace BookingService.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VehicleNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VehicleType")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("BookingId");

@@ -41,7 +41,7 @@ namespace BookingService
 
                     // 2. Dono Audiences ko array me validate karo
                     ValidateAudience = true,
-                    ValidAudiences = new[] { "BookingService", "ServiceCenterService", "VehicleService", "InvoiceService" },
+                    ValidAudiences = new[] { "BookingService", "ServiceCenterService", "VehicleService" },
 
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.Zero,

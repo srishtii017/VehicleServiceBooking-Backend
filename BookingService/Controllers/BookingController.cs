@@ -43,6 +43,7 @@ namespace BookingService.Controllers
         }
 
         [HttpGet("allbookings")]
+        [Authorize(Roles = "Owner")]
         public async Task<IActionResult> GetAllBookingAsync()
         {
             try
@@ -67,13 +68,14 @@ namespace BookingService.Controllers
         {
             try
             {
+                var token = HttpContext.Request.Headers["Authorization"].ToString();
+
                 var userIdClaim = User.FindFirst("UserId");
                 if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
                     return Unauthorized(new { message = "Invalid or missing user ID in token" });
 
 
-
-                var booking = await _bookingService.CreateBookingAsync(userId, bookingDto);
+                var booking = await _bookingService.CreateBookingAsync(userId, bookingDto,token);
 
                 if(booking == null)
                 {
