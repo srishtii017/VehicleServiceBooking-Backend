@@ -1,0 +1,659 @@
+2026-06-24 12:39:38.569 +05:30 [INF] User profile is available. Using 'C:\Users\2492274\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-24 12:39:39.567 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-24 12:39:39.900 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-24 12:39:39.955 +05:30 [INF] Hosting environment: Development
+2026-06-24 12:39:39.963 +05:30 [INF] Content root path: C:\Users\2492274\OneDrive - Cognizant\Desktop\VehicleServiceBooking-Backend\VehicleService
+2026-06-24 12:39:41.932 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 12:39:42.538 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 608.681ms
+2026-06-24 12:39:42.581 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 12:39:42.593 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 12.3334ms
+2026-06-24 12:39:42.615 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 12:39:43.063 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 448.6613ms
+2026-06-24 12:39:43.173 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 12:39:43.192 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.5392ms
+2026-06-24 12:44:17.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/ - null null
+2026-06-24 12:44:17.813 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/ - 404 null null 117.0499ms
+2026-06-24 12:44:17.822 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5179/, Response status code: 404
+2026-06-24 12:57:03.719 +05:30 [INF] User profile is available. Using 'C:\Users\2492274\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-24 12:57:04.135 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-24 12:57:04.304 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-24 12:57:04.306 +05:30 [INF] Hosting environment: Development
+2026-06-24 12:57:04.308 +05:30 [INF] Content root path: C:\Users\2492274\OneDrive - Cognizant\Desktop\VehicleServiceBooking-Backend\VehicleService
+2026-06-24 12:57:07.658 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 12:57:09.068 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 1439.8371ms
+2026-06-24 12:57:09.239 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 12:57:09.257 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 12:57:09.299 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 62.3443ms
+2026-06-24 12:57:09.589 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 331.7207ms
+2026-06-24 12:57:10.010 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 12:57:10.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.2283ms
+2026-06-24 13:04:20.772 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 13:04:20.780 +05:30 [INF] CORS policy execution successful.
+2026-06-24 13:04:20.908 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:04:20.930 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 13:04:22.503 +05:30 [INF] Executed DbCommand (59ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 13:04:22.535 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 13:04:22.544 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 1606.3994ms
+2026-06-24 13:04:22.547 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:04:22.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 1792.7277ms
+2026-06-24 13:07:01.887 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 13:07:01.895 +05:30 [INF] CORS policy execution successful.
+2026-06-24 13:07:01.901 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 14.0113ms
+2026-06-24 13:07:01.907 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 13:07:01.915 +05:30 [INF] CORS policy execution successful.
+2026-06-24 13:07:01.928 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:07:01.932 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 13:07:01.980 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 13:07:01.987 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 13:07:01.992 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 56.5533ms
+2026-06-24 13:07:01.995 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:07:01.997 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 404 null text/plain; charset=utf-8 90.8221ms
+2026-06-24 13:07:37.866 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 13:07:37.916 +05:30 [INF] CORS policy execution successful.
+2026-06-24 13:07:37.918 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 52.3045ms
+2026-06-24 13:07:37.932 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 13:07:37.938 +05:30 [INF] CORS policy execution successful.
+2026-06-24 13:07:37.951 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:07:37.971 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 13:07:38.042 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 13:07:38.048 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 13:07:38.050 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 75.5232ms
+2026-06-24 13:07:38.053 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:07:38.056 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 404 null text/plain; charset=utf-8 123.373ms
+2026-06-24 13:12:06.781 +05:30 [INF] User profile is available. Using 'C:\Users\2492274\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-24 13:12:08.310 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-24 13:12:09.002 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-24 13:12:09.015 +05:30 [INF] Hosting environment: Development
+2026-06-24 13:12:09.018 +05:30 [INF] Content root path: C:\Users\2492274\OneDrive - Cognizant\Desktop\VehicleServiceBooking-Backend\VehicleService
+2026-06-24 13:12:09.714 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 13:12:10.384 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 694.3792ms
+2026-06-24 13:12:10.405 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 13:12:10.406 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 13:12:10.415 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 14.4599ms
+2026-06-24 13:12:10.509 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.6519ms
+2026-06-24 13:12:10.612 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 13:12:10.637 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.5076ms
+2026-06-24 13:12:41.077 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 13:12:41.093 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 16.0797ms
+2026-06-24 13:12:41.126 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 13:12:41.128 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 13:12:41.138 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 9.879ms
+2026-06-24 13:12:41.160 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.6017ms
+2026-06-24 13:12:41.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 13:12:41.267 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.9489ms
+2026-06-24 13:14:07.886 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 13:14:07.911 +05:30 [INF] CORS policy execution successful.
+2026-06-24 13:14:08.184 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:14:08.229 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 13:14:10.582 +05:30 [INF] Executed DbCommand (109ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 13:14:10.639 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 13:14:10.650 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 2411.8016ms
+2026-06-24 13:14:10.654 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 13:14:10.670 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 2788.3749ms
+2026-06-24 14:17:34.220 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 14:17:34.235 +05:30 [INF] CORS policy execution successful.
+2026-06-24 14:17:34.264 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-06-2026 08:33:39', Current time (UTC): '24-06-2026 08:47:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-24 14:17:34.385 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-06-2026 08:33:39', Current time (UTC): '24-06-2026 08:47:34'.
+2026-06-24 14:17:34.393 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-24 14:17:34.408 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-24 14:17:34.411 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 401 0 null 193.7379ms
+2026-06-24 14:46:01.132 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 14:46:01.141 +05:30 [INF] CORS policy execution successful.
+2026-06-24 14:46:01.151 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 14:46:01.158 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 14:46:01.458 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 14:46:01.465 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 14:46:01.470 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 306.8438ms
+2026-06-24 14:46:01.476 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 14:46:01.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 347.4932ms
+2026-06-24 15:00:50.815 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:00:50.823 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:00:50.826 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:00:50.829 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:00:51.118 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:00:51.125 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:00:51.128 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 295.8626ms
+2026-06-24 15:00:51.130 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:00:51.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 317.6096ms
+2026-06-24 15:06:39.054 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:06:39.065 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:06:39.068 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:06:39.071 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:06:39.330 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:06:39.335 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:06:39.338 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 261.3223ms
+2026-06-24 15:06:39.340 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:06:39.343 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 289.1774ms
+2026-06-24 15:06:45.952 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:06:45.957 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:06:45.960 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:06:45.963 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:06:45.975 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:06:45.979 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:06:45.981 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 14.496ms
+2026-06-24 15:06:45.984 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:06:45.985 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 32.9831ms
+2026-06-24 15:07:17.817 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:07:17.827 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:07:17.830 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:07:17.833 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:07:17.846 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:07:17.854 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:07:17.858 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 20.7874ms
+2026-06-24 15:07:17.861 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:07:17.863 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 46.7422ms
+2026-06-24 15:09:01.439 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:09:01.452 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:09:01.455 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:09:01.465 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:09:01.490 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:09:01.498 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:09:01.500 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 26.6166ms
+2026-06-24 15:09:01.502 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:09:01.505 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 66.4938ms
+2026-06-24 15:09:05.473 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:09:05.479 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:09:05.481 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:09:05.483 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:09:05.494 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:09:05.501 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:09:05.504 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 16.4534ms
+2026-06-24 15:09:05.506 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:09:05.509 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 36.2605ms
+2026-06-24 15:09:26.255 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:09:26.259 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:09:26.261 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:09:26.264 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:09:26.277 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:09:26.283 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:09:26.285 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 15.5923ms
+2026-06-24 15:09:26.287 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:09:26.289 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 33.9602ms
+2026-06-24 15:55:21.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:55:21.717 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:55:21.720 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:55:21.722 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:55:21.944 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:55:21.948 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:55:21.951 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 223.5715ms
+2026-06-24 15:55:21.955 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:55:21.958 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 250.4215ms
+2026-06-24 15:57:27.011 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:57:27.026 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:57:27.030 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:57:27.032 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:57:27.069 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:57:27.076 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:57:27.080 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 35.434ms
+2026-06-24 15:57:27.082 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:57:27.085 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 78.5564ms
+2026-06-24 15:57:32.655 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 15:57:32.661 +05:30 [INF] CORS policy execution successful.
+2026-06-24 15:57:32.663 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:57:32.667 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 15:57:32.676 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 15:57:32.682 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 15:57:32.685 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 14.8962ms
+2026-06-24 15:57:32.689 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 15:57:32.692 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 404 null text/plain; charset=utf-8 38.1217ms
+2026-06-24 16:11:18.319 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/vehicle - application/json 81
+2026-06-24 16:11:18.325 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:11:18.329 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-24 16:11:18.370 +05:30 [INF] Route matched with {action = "AddVehicle", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddVehicle(VehicleService.DTO.VehicleDTO) on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:11:18.659 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/vehicle - application/json 81
+2026-06-24 16:11:18.667 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:11:18.669 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-24 16:11:18.671 +05:30 [INF] Route matched with {action = "AddVehicle", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddVehicle(VehicleService.DTO.VehicleDTO) on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:11:19.040 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 15), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Vehicles] ([Make], [Model], [RegistrationNumber], [UserId], [Year])
+OUTPUT INSERTED.[VehicleId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-24 16:11:19.040 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 15), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Vehicles] ([Make], [Model], [RegistrationNumber], [UserId], [Year])
+OUTPUT INSERTED.[VehicleId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-24 16:11:19.101 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'VehicleService.Models.Vehicle'.
+2026-06-24 16:11:19.101 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'VehicleService.Models.Vehicle'.
+2026-06-24 16:11:19.150 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.AddVehicle (VehicleService) in 476.0684ms
+2026-06-24 16:11:19.150 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.AddVehicle (VehicleService) in 776.3384ms
+2026-06-24 16:11:19.155 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-24 16:11:19.157 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-24 16:11:19.158 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/vehicle - 201 null application/json; charset=utf-8 499.4947ms
+2026-06-24 16:11:19.160 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/vehicle - 201 null application/json; charset=utf-8 840.8738ms
+2026-06-24 16:11:34.654 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 16:11:34.659 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:11:34.662 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:11:34.664 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:11:34.682 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:11:34.693 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 16:11:34.699 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 31.1985ms
+2026-06-24 16:11:34.701 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:11:34.703 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 49.1151ms
+2026-06-24 16:11:42.093 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 16:11:42.097 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:11:42.099 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:11:42.101 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:11:42.107 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:11:42.112 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 16:11:42.115 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 11.5052ms
+2026-06-24 16:11:42.117 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:11:42.119 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 26.4053ms
+2026-06-24 16:11:58.328 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5179/api/vehicle/1 - null null
+2026-06-24 16:11:58.331 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:11:58.335 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2026-06-24 16:11:58.340 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-06-24 16:11:58.341 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-24 16:11:58.343 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-24 16:11:58.346 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5179/api/vehicle/1 - 401 0 null 18.3754ms
+2026-06-24 16:12:47.363 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5179/api/vehicle/1 - null null
+2026-06-24 16:12:47.367 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:12:47.368 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2026-06-24 16:12:47.373 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-06-24 16:12:47.375 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-24 16:12:47.376 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-24 16:12:47.378 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5179/api/vehicle/1 - 401 0 null 14.653ms
+2026-06-24 16:12:54.806 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 16:12:54.814 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:12:54.816 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:12:54.820 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:12:54.840 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:12:54.846 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 16:12:54.851 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 24.8176ms
+2026-06-24 16:12:54.855 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:12:54.858 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 52.1641ms
+2026-06-24 16:13:01.109 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5179/api/vehicle/1 - null null
+2026-06-24 16:13:01.113 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:13:01.115 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2026-06-24 16:13:01.120 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-06-24 16:13:01.122 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-24 16:13:01.124 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-24 16:13:01.125 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5179/api/vehicle/1 - 401 0 null 16.4382ms
+2026-06-24 16:28:29.881 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:28:29.905 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:28:29.915 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 33.8894ms
+2026-06-24 16:28:29.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:28:29.938 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:28:29.941 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:28:29.943 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:28:30.194 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:28:30.200 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-24 16:28:30.203 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 256.4123ms
+2026-06-24 16:28:30.206 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:28:30.208 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 404 null text/plain; charset=utf-8 282.0685ms
+2026-06-24 16:30:35.285 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/vehicle - application/json 81
+2026-06-24 16:30:35.291 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:30:35.295 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-24 16:30:35.297 +05:30 [INF] Route matched with {action = "AddVehicle", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddVehicle(VehicleService.DTO.VehicleDTO) on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:30:35.316 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 15), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Vehicles] ([Make], [Model], [RegistrationNumber], [UserId], [Year])
+OUTPUT INSERTED.[VehicleId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-24 16:30:35.322 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'VehicleService.Models.Vehicle'.
+2026-06-24 16:30:35.325 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.AddVehicle (VehicleService) in 24.5776ms
+2026-06-24 16:30:35.328 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-24 16:30:35.330 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/vehicle - 201 null application/json; charset=utf-8 45.4516ms
+2026-06-24 16:30:38.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 16:30:38.256 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:30:38.258 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:30:38.260 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:30:38.273 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:30:38.277 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 16:30:38.281 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 16.2508ms
+2026-06-24 16:30:38.284 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:30:38.286 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 33.9351ms
+2026-06-24 16:30:49.627 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:30:49.640 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:30:49.648 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 20.9759ms
+2026-06-24 16:30:49.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:30:49.661 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:30:49.664 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:30:49.667 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:30:49.679 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:30:49.685 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 16:30:49.689 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 17.5682ms
+2026-06-24 16:30:49.693 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:30:49.695 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 39.2317ms
+2026-06-24 16:36:31.040 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:36:31.047 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:36:31.050 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 10.3189ms
+2026-06-24 16:36:31.062 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:36:31.073 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:36:31.074 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:36:31.076 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:36:31.315 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:36:31.320 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 16:36:31.322 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 244.1732ms
+2026-06-24 16:36:31.326 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:36:31.328 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 266.2273ms
+2026-06-24 16:49:40.653 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:49:40.664 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:49:40.665 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 11.9732ms
+2026-06-24 16:49:40.672 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 16:49:40.674 +05:30 [INF] CORS policy execution successful.
+2026-06-24 16:49:40.713 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:49:40.717 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 16:49:40.751 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 16:49:40.842 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 16:49:40.862 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 141.5112ms
+2026-06-24 16:49:40.871 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 16:49:40.873 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 200.2068ms
+2026-06-24 20:57:33.458 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 20:57:33.510 +05:30 [INF] CORS policy execution successful.
+2026-06-24 20:57:33.519 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 61.1305ms
+2026-06-24 20:57:33.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 20:57:33.589 +05:30 [INF] CORS policy execution successful.
+2026-06-24 20:57:33.608 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-06-2026 11:56:06', Current time (UTC): '24-06-2026 15:27:33'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-24 20:57:33.636 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-06-2026 11:56:06', Current time (UTC): '24-06-2026 15:27:33'.
+2026-06-24 20:57:33.646 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-24 20:57:33.652 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-24 20:57:33.657 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 401 0 null 97.1179ms
+2026-06-24 20:57:52.657 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 20:57:52.666 +05:30 [INF] CORS policy execution successful.
+2026-06-24 20:57:52.669 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 12.2287ms
+2026-06-24 20:57:52.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 20:57:52.706 +05:30 [INF] CORS policy execution successful.
+2026-06-24 20:57:52.713 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-06-2026 11:56:06', Current time (UTC): '24-06-2026 15:27:52'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-06-24 20:57:52.718 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '24-06-2026 11:56:06', Current time (UTC): '24-06-2026 15:27:52'.
+2026-06-24 20:57:52.721 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-24 20:57:52.724 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-24 20:57:52.728 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 401 0 null 44.953ms
+2026-06-24 21:45:55.034 +05:30 [INF] User profile is available. Using 'C:\Users\2492274\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-24 21:45:55.550 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-24 21:45:55.953 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-24 21:45:55.956 +05:30 [INF] Hosting environment: Development
+2026-06-24 21:45:55.958 +05:30 [INF] Content root path: C:\Users\2492274\OneDrive - Cognizant\Desktop\VehicleServiceBooking-Backend\VehicleService
+2026-06-24 21:45:56.549 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 21:45:57.586 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 1088.0138ms
+2026-06-24 21:45:57.645 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 21:45:57.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 26.0312ms
+2026-06-24 21:45:57.701 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 21:45:57.805 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.0247ms
+2026-06-24 21:45:58.222 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 21:45:58.272 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.961ms
+2026-06-24 21:46:27.538 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 21:46:27.551 +05:30 [INF] CORS policy execution successful.
+2026-06-24 21:46:27.751 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 21:46:27.783 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 21:46:29.717 +05:30 [INF] Executed DbCommand (85ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 21:46:29.850 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 21:46:29.874 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 2080.5545ms
+2026-06-24 21:46:29.877 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 21:46:29.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 2358.2202ms
+2026-06-24 21:47:24.690 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 21:47:24.724 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 33.8564ms
+2026-06-24 21:47:24.776 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 21:47:24.787 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 10.6649ms
+2026-06-24 21:47:24.800 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 21:47:24.828 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.2009ms
+2026-06-24 21:47:24.987 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 21:47:25.003 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.9206ms
+2026-06-24 21:47:26.349 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 21:47:26.354 +05:30 [INF] CORS policy execution successful.
+2026-06-24 21:47:26.361 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 21:47:26.370 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 21:47:26.427 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 21:47:26.432 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 21:47:26.437 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 62.8097ms
+2026-06-24 21:47:26.440 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 21:47:26.446 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 96.6916ms
+2026-06-24 21:56:09.589 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 21:56:09.612 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 22.9003ms
+2026-06-24 21:56:09.661 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 21:56:09.666 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 21:56:09.667 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 6.1256ms
+2026-06-24 21:56:09.695 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.2241ms
+2026-06-24 21:56:09.845 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 21:56:09.853 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.3212ms
+2026-06-24 21:56:20.899 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 21:56:20.908 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 8.5979ms
+2026-06-24 21:56:20.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 21:56:20.961 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 21:56:20.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 7.0061ms
+2026-06-24 21:56:20.979 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.4395ms
+2026-06-24 21:56:21.072 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 21:56:21.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.3774ms
+2026-06-24 21:56:28.888 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-24 21:56:28.895 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 7.872ms
+2026-06-24 21:56:28.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-24 21:56:28.947 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-24 21:56:28.953 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 9.2006ms
+2026-06-24 21:56:28.966 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.8803ms
+2026-06-24 21:56:29.082 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-24 21:56:29.089 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.1181ms
+2026-06-24 22:10:11.033 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 22:10:11.043 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:10:11.054 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:10:11.062 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:10:11.313 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:10:11.319 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:10:11.326 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 260.8009ms
+2026-06-24 22:10:11.328 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:10:11.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 297.3703ms
+2026-06-24 22:11:44.751 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 22:11:44.756 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:11:44.759 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:11:44.761 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:11:44.777 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:11:44.782 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:11:44.784 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 20.2342ms
+2026-06-24 22:11:44.788 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:11:44.790 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 38.8988ms
+2026-06-24 22:11:49.232 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:11:49.236 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:11:49.242 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 9.4582ms
+2026-06-24 22:11:49.250 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:11:49.255 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:11:49.257 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:11:49.258 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:11:49.274 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:11:49.288 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:11:49.290 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 23.7942ms
+2026-06-24 22:11:49.297 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:11:49.300 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 49.0781ms
+2026-06-24 22:12:01.649 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:12:01.665 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:12:01.669 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 20.7649ms
+2026-06-24 22:12:01.676 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:12:01.683 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:12:01.686 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:12:01.688 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:12:01.698 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:12:01.703 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:12:01.705 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 14.4661ms
+2026-06-24 22:12:01.707 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:12:01.709 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 32.6464ms
+2026-06-24 22:16:46.968 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:16:46.983 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:16:46.986 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 18.133ms
+2026-06-24 22:16:47.002 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:16:47.042 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:16:47.045 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:16:47.048 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:16:47.073 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:16:47.078 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:16:47.081 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 30.0159ms
+2026-06-24 22:16:47.085 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:16:47.091 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 88.6419ms
+2026-06-24 22:25:09.632 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:25:09.636 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:25:09.639 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 8.4969ms
+2026-06-24 22:25:09.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:25:09.664 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:25:09.667 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:25:09.679 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:25:09.960 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:25:09.965 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:25:09.967 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 258.7606ms
+2026-06-24 22:25:09.970 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:25:09.973 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 320.8172ms
+2026-06-24 22:31:17.547 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:31:17.552 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:31:17.573 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5179/api/Vehicle/user-vehicles - 204 null null 25.8278ms
+2026-06-24 22:31:17.592 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - null null
+2026-06-24 22:31:17.601 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:31:17.605 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:31:17.609 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:31:17.856 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:31:17.861 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:31:17.865 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 249.1256ms
+2026-06-24 22:31:17.868 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:31:17.871 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/Vehicle/user-vehicles - 200 null application/json; charset=utf-8 278.6192ms
+2026-06-24 22:33:52.873 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-24 22:33:52.880 +05:30 [INF] CORS policy execution successful.
+2026-06-24 22:33:52.883 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:33:52.886 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-24 22:33:52.910 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-24 22:33:52.918 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 22:33:52.923 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 27.3973ms
+2026-06-24 22:33:52.926 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-24 22:33:52.930 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 57.1754ms

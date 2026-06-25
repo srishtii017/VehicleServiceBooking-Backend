@@ -1,0 +1,39 @@
+2026-06-16 17:02:31.416 +05:30 [INF] Now listening on: http://localhost:5000
+2026-06-16 17:02:31.831 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-16 17:02:31.835 +05:30 [INF] Hosting environment: Development
+2026-06-16 17:02:31.837 +05:30 [INF] Content root path: C:\Users\2492274\OneDrive - Cognizant\Desktop\Project\VehicleServiceBookingBackend\Gateway
+2026-06-16 17:02:33.026 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-06-16 17:02:33.758 +05:30 [WRN] RequestId: 0HNMBJBQ3E0GA:00000001, PreviousRequestId: -
+DownstreamRouteFinderMiddleware setting pipeline errors because DownstreamRouteFinder returned the following ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /
+2026-06-16 17:02:33.843 +05:30 [WRN] RequestId: 0HNMBJBQ3E0GA:00000001, PreviousRequestId: -
+ResponderMiddleware found 1 error ->
+UnableToFindDownstreamRouteError: Failed to match route configuration for upstream: GET /
+Setting error response for request: GET /
+2026-06-16 17:02:33.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 null null 888.929ms
+2026-06-16 17:02:39.053 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/owner/register - null null
+2026-06-16 17:02:39.059 +05:30 [INF] CORS policy execution successful.
+2026-06-16 17:02:39.062 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/owner/register - 204 null null 9.3099ms
+2026-06-16 17:02:39.067 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/owner/register - application/json 101
+2026-06-16 17:02:39.072 +05:30 [INF] CORS policy execution successful.
+2026-06-16 17:02:39.093 +05:30 [INF] RequestId: 0HNMBJBQ3E0GB:00000002, PreviousRequestId: -
+Rate limiting is disabled for route '/owner/{everything}' via the EnableRateLimiting option.
+2026-06-16 17:02:39.097 +05:30 [INF] RequestId: 0HNMBJBQ3E0GB:00000002, PreviousRequestId: -
+No authentication is required for the path '/owner/register' in the route /owner/{everything}.
+2026-06-16 17:02:41.257 +05:30 [INF] RequestId: 0HNMBJBQ3E0GB:00000002, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5242/api/owner/register
+2026-06-16 17:02:41.272 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/owner/register - 200 null application/json; charset=utf-8 2205.0654ms
+2026-06-16 17:02:41.278 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/owner/register, Response status code: 200
+2026-06-16 17:03:29.298 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/owner/login - null null
+2026-06-16 17:03:29.303 +05:30 [INF] CORS policy execution successful.
+2026-06-16 17:03:29.304 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/owner/login - 204 null null 6.5327ms
+2026-06-16 17:03:29.311 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/owner/login - application/json 56
+2026-06-16 17:03:29.314 +05:30 [INF] CORS policy execution successful.
+2026-06-16 17:03:29.316 +05:30 [INF] RequestId: 0HNMBJBQ3E0GB:00000004, PreviousRequestId: -
+Rate limiting is disabled for route '/owner/{everything}' via the EnableRateLimiting option.
+2026-06-16 17:03:29.317 +05:30 [INF] RequestId: 0HNMBJBQ3E0GB:00000004, PreviousRequestId: -
+No authentication is required for the path '/owner/login' in the route /owner/{everything}.
+2026-06-16 17:03:29.696 +05:30 [INF] RequestId: 0HNMBJBQ3E0GB:00000004, PreviousRequestId: -
+200 OK status code of request URI: http://localhost:5242/api/owner/login
+2026-06-16 17:03:29.705 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/owner/login - 200 null application/json; charset=utf-8 394.058ms
+2026-06-16 17:03:29.711 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5000/owner/login, Response status code: 200

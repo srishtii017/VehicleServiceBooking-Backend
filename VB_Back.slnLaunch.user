@@ -1,0 +1,31 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "..\\VehicleServiceBooking-Backend\\VehicleService\\VehicleService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\VehicleServiceBooking-Backend\\ServiceCenterService\\ServiceCenterService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\VehicleServiceBooking-Backend\\OwnerService\\OwnerService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\VehicleServiceBooking-Backend\\Gateway\\Gateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\VehicleServiceBooking-Backend\\BookingService\\BookingService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

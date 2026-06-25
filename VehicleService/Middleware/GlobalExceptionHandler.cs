@@ -1,0 +1,43 @@
+﻿using System.Net;
+using System.Text.Json;
+
+namespace VehicleService.Middleware
+{
+    public class GlobalExceptionHandler
+    {
+        private readonly RequestDelegate _next;
+        private readonly ILogger<GlobalExceptionHandler> _logger;
+
+        public GlobalExceptionHandler(RequestDelegate next, ILogger<GlobalExceptionHandler> logger)
+        {
+            _next = next;
+            _logger = logger;
+        }
+
+        public async Task InvokeAsync(HttpContext context)
+        {
+            try
+            {
+                await _next(context);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error on {Method} {Path} — {Message}",
+                    context.Request.Method,
+                    context.Request.Path,
+                    ex.Message);
+
+                context.Response.ContentType = "application/json";
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+                var response = new
+                {
+                    message = "Something went wrong",
+                    detail = ex.Message
+                };
+
+                await context.Response.WriteAsync(JsonSerializer.Serialize(response));
+            }
+        }
+    }
+}

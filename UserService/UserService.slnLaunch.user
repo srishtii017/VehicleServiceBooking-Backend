@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "UserService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\Gateway\\Gateway\\Gateway.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

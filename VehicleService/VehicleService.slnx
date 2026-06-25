@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../../../../Downloads/Project 5/Project/Backend/Gateway/Gateway.csproj" />
+  <Project Path="../../UserService_Project/UserService/UserService.csproj" />
+  <Project Path="../VehicleServiceBooking.Tests/VehicleServiceBooking.Tests.csproj" Id="4b1abfd1-0d70-42bb-8e88-164db7fc1d13" />
+  <Project Path="VehicleService.csproj" />
+</Solution>

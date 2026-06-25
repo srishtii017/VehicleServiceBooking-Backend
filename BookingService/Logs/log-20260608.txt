@@ -1,0 +1,49 @@
+2026-06-08 15:43:07.938 +05:30 [INF] User profile is available. Using 'C:\Users\2492327\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-08 15:43:08.764 +05:30 [INF] Now listening on: http://localhost:5167
+2026-06-08 15:43:08.915 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 15:43:08.919 +05:30 [INF] Hosting environment: Development
+2026-06-08 15:43:08.922 +05:30 [INF] Content root path: C:\Users\2492327\Downloads\Project 4\Project\BookingService
+2026-06-08 15:43:10.629 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5167/ - null null
+2026-06-08 15:43:11.929 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5167/ - 404 null null 1344.5805ms
+2026-06-08 15:43:11.953 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5167/, Response status code: 404
+2026-06-08 15:44:30.989 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5167/api/Bookings/my-bookings - application/json 115
+2026-06-08 15:44:31.192 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-06-08 15:44:31.197 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-06-08 15:44:31.202 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5167/api/Bookings/my-bookings - 405 0 null 213.5621ms
+2026-06-08 15:44:57.466 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5167/api/Bookings/my-bookings - application/json 115
+2026-06-08 15:44:57.486 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-06-08 15:44:57.490 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-06-08 15:44:57.493 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5167/api/Bookings/my-bookings - 405 0 null 26.8096ms
+2026-06-08 15:45:03.896 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5167/api/Bookings/my-bookings - application/json 115
+2026-06-08 15:45:03.913 +05:30 [INF] Executing endpoint 'BookingService.Controllers.BookingsController.GetMyBookings (BookingService)'
+2026-06-08 15:45:03.947 +05:30 [INF] Route matched with {action = "GetMyBookings", controller = "Bookings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyBookings() on controller BookingService.Controllers.BookingsController (BookingService).
+2026-06-08 15:45:06.152 +05:30 [INF] Executed DbCommand (126ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BookingId], [b].[Date], [b].[ServiceCenterId], [b].[ServiceType], [b].[Status], [b].[UserId], [b].[VehicleId]
+FROM [Bookings] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2026-06-08 15:45:06.313 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookingService.Model.Booking, BookingService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-08 15:45:06.344 +05:30 [INF] Executed action BookingService.Controllers.BookingsController.GetMyBookings (BookingService) in 2386.6956ms
+2026-06-08 15:45:06.349 +05:30 [INF] Executed endpoint 'BookingService.Controllers.BookingsController.GetMyBookings (BookingService)'
+2026-06-08 15:45:06.366 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5167/api/Bookings/my-bookings - 200 null application/json; charset=utf-8 2470.0718ms
+2026-06-08 15:46:53.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5167/api/Bookings/104 - application/json 115
+2026-06-08 15:46:53.435 +05:30 [INF] Executing endpoint 'BookingService.Controllers.BookingsController.GetBookingById (BookingService)'
+2026-06-08 15:46:53.462 +05:30 [INF] Route matched with {action = "GetBookingById", controller = "Bookings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookingById(Int32) on controller BookingService.Controllers.BookingsController (BookingService).
+2026-06-08 15:46:53.615 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookingId], [b].[Date], [b].[ServiceCenterId], [b].[ServiceType], [b].[Status], [b].[UserId], [b].[VehicleId]
+FROM [Bookings] AS [b]
+WHERE [b].[BookingId] = @__p_0
+2026-06-08 15:46:53.625 +05:30 [INF] Executing OkObjectResult, writing value of type 'BookingService.Model.Booking'.
+2026-06-08 15:46:53.629 +05:30 [INF] Executed action BookingService.Controllers.BookingsController.GetBookingById (BookingService) in 161.1912ms
+2026-06-08 15:46:53.633 +05:30 [INF] Executed endpoint 'BookingService.Controllers.BookingsController.GetBookingById (BookingService)'
+2026-06-08 15:46:53.636 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5167/api/Bookings/104 - 200 null application/json; charset=utf-8 225.7954ms
+2026-06-08 15:47:07.910 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5167/api/Bookings/103 - application/json 115
+2026-06-08 15:47:07.928 +05:30 [INF] Executing endpoint 'BookingService.Controllers.BookingsController.GetBookingById (BookingService)'
+2026-06-08 15:47:07.933 +05:30 [INF] Route matched with {action = "GetBookingById", controller = "Bookings"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBookingById(Int32) on controller BookingService.Controllers.BookingsController (BookingService).
+2026-06-08 15:47:08.050 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BookingId], [b].[Date], [b].[ServiceCenterId], [b].[ServiceType], [b].[Status], [b].[UserId], [b].[VehicleId]
+FROM [Bookings] AS [b]
+WHERE [b].[BookingId] = @__p_0
+2026-06-08 15:47:08.057 +05:30 [INF] Executing OkObjectResult, writing value of type 'BookingService.Model.Booking'.
+2026-06-08 15:47:08.061 +05:30 [INF] Executed action BookingService.Controllers.BookingsController.GetBookingById (BookingService) in 121.5318ms
+2026-06-08 15:47:08.066 +05:30 [INF] Executed endpoint 'BookingService.Controllers.BookingsController.GetBookingById (BookingService)'
+2026-06-08 15:47:08.070 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5167/api/Bookings/103 - 200 null application/json; charset=utf-8 160.0634ms

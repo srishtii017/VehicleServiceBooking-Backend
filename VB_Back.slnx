@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../VehicleServiceBooking-Backend/BookingService/BookingService.csproj" />
+  <Project Path="../VehicleServiceBooking-Backend/Gateway/Gateway.csproj" />
+  <Project Path="../VehicleServiceBooking-Backend/OwnerService/OwnerService.csproj" />
+  <Project Path="../VehicleServiceBooking-Backend/ServiceCenterService/ServiceCenterService.csproj" />
+  <Project Path="../VehicleServiceBooking-Backend/UserService/UserService.csproj" />
+  <Project Path="../VehicleServiceBooking-Backend/VehicleService/VehicleService.csproj" />
+</Solution>

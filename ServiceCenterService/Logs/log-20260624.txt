@@ -1,0 +1,61 @@
+2026-06-24 12:39:39.980 +05:30 [INF] User profile is available. Using 'C:\Users\2492274\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-24 12:39:40.791 +05:30 [INF] Now listening on: http://localhost:5268
+2026-06-24 12:39:42.709 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5268/weatherforecast - null null
+2026-06-24 12:39:43.304 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5268/weatherforecast - 404 null null 598.4546ms
+2026-06-24 12:39:43.320 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5268/weatherforecast, Response status code: 404
+2026-06-24 12:40:26.279 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5268/api/servicecenter - application/json 349
+2026-06-24 12:40:26.378 +05:30 [INF] Executing endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Post (ServiceCenterService)'
+2026-06-24 12:40:26.418 +05:30 [INF] Route matched with {action = "Post", controller = "ServiceCenter"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(ServiceCenterService.DTO.ServiceCenterDTO) on controller ServiceCenterService.Controllers.ServiceCenterController (ServiceCenterService).
+2026-06-24 12:40:27.956 +05:30 [INF] Executed DbCommand (82ms) [Parameters=[@__ownerId_0='?' (Size = 20) (DbType = AnsiString), @__dto_CenterName_1='?' (Size = 150), @__dto_Street_2='?' (Size = 150), @__dto_Pincode_3='?' (Size = 6) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[ServiceCenterID], [s].[Capacity], [s].[CenterName], [s].[City], [s].[Contact], [s].[CreatedAt], [s].[FlatNumber], [s].[NearestLandmark], [s].[OwnerId], [s].[Pincode], [s].[ServiceDescription], [s].[State], [s].[Status], [s].[Street]
+FROM [ServiceCenters] AS [s]
+WHERE [s].[OwnerId] = @__ownerId_0 AND [s].[CenterName] = @__dto_CenterName_1 AND [s].[Street] = @__dto_Street_2 AND [s].[Pincode] = @__dto_Pincode_3 AND [s].[Status] = 1
+2026-06-24 12:40:28.034 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ServiceCenters] AS [s]
+2026-06-24 12:40:28.180 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 20) (DbType = AnsiString), @p1='?' (DbType = Int32), @p2='?' (Size = 150), @p3='?' (Size = 100), @p4='?' (Size = 10) (DbType = AnsiString), @p5='?' (DbType = DateTime2), @p6='?' (Size = 50), @p7='?' (Size = 150), @p8='?' (Size = 20) (DbType = AnsiString), @p9='?' (Size = 6) (DbType = AnsiString), @p10='?' (Size = 1100), @p11='?' (Size = 100), @p12='?' (DbType = Int32), @p13='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ServiceCenters] ([ServiceCenterID], [Capacity], [CenterName], [City], [Contact], [CreatedAt], [FlatNumber], [NearestLandmark], [OwnerId], [Pincode], [ServiceDescription], [State], [Status], [Street])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2026-06-24 12:40:28.206 +05:30 [INF] Start processing HTTP request POST http://localhost:5242/api/owner/addServiceCenter
+2026-06-24 12:40:28.211 +05:30 [INF] Sending HTTP request POST http://localhost:5242/api/owner/addServiceCenter
+2026-06-24 12:40:28.391 +05:30 [INF] Received HTTP response headers after 175.9672ms - 200
+2026-06-24 12:40:28.393 +05:30 [INF] End processing HTTP request after 191.8019ms - 200
+2026-06-24 12:40:28.399 +05:30 [INF] Executing OkObjectResult, writing value of type 'ServiceCenterService.DTO.ApiResponse`1[[ServiceCenterService.Models.ServiceCenter, ServiceCenterService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 12:40:28.427 +05:30 [INF] Executed action ServiceCenterService.Controllers.ServiceCenterController.Post (ServiceCenterService) in 2003.5854ms
+2026-06-24 12:40:28.429 +05:30 [INF] Executed endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Post (ServiceCenterService)'
+2026-06-24 12:40:28.439 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5268/api/servicecenter - 200 null application/json; charset=utf-8 2160.1824ms
+2026-06-24 12:40:55.445 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5268/api/servicecenter - null null
+2026-06-24 12:40:55.453 +05:30 [INF] Executing endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService)'
+2026-06-24 12:40:55.459 +05:30 [INF] Route matched with {action = "Get", controller = "ServiceCenter"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ServiceCenterService.Controllers.ServiceCenterController (ServiceCenterService).
+2026-06-24 12:40:55.503 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__ownerId_0='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServiceCenterID], [s].[Capacity], [s].[CenterName], [s].[City], [s].[Contact], [s].[CreatedAt], [s].[FlatNumber], [s].[NearestLandmark], [s].[OwnerId], [s].[Pincode], [s].[ServiceDescription], [s].[State], [s].[Status], [s].[Street]
+FROM [ServiceCenters] AS [s]
+WHERE [s].[OwnerId] = @__ownerId_0 AND [s].[Status] = 1
+2026-06-24 12:40:55.512 +05:30 [INF] Executing OkObjectResult, writing value of type 'ServiceCenterService.DTO.ApiResponse`1[[System.Collections.Generic.List`1[[ServiceCenterService.Models.ServiceCenter, ServiceCenterService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-24 12:40:55.517 +05:30 [INF] Executed action ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService) in 55.1566ms
+2026-06-24 12:40:55.520 +05:30 [INF] Executed endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService)'
+2026-06-24 12:40:55.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5268/api/servicecenter - 200 null application/json; charset=utf-8 76.0458ms
+2026-06-24 12:41:47.242 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5268/api/servicecenter/AGR_017 - null null
+2026-06-24 12:41:47.252 +05:30 [INF] Executing endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService)'
+2026-06-24 12:41:47.264 +05:30 [INF] Route matched with {action = "Get", controller = "ServiceCenter"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(System.String) on controller ServiceCenterService.Controllers.ServiceCenterController (ServiceCenterService).
+2026-06-24 12:41:47.383 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__id_0='?' (Size = 20) (DbType = AnsiString), @__ownerId_1='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[ServiceCenterID], [s].[Capacity], [s].[CenterName], [s].[City], [s].[Contact], [s].[CreatedAt], [s].[FlatNumber], [s].[NearestLandmark], [s].[OwnerId], [s].[Pincode], [s].[ServiceDescription], [s].[State], [s].[Status], [s].[Street]
+FROM [ServiceCenters] AS [s]
+WHERE [s].[ServiceCenterID] = @__id_0 AND [s].[OwnerId] = @__ownerId_1 AND [s].[Status] = 1
+2026-06-24 12:41:47.393 +05:30 [INF] Executing OkObjectResult, writing value of type 'ServiceCenterService.DTO.ApiResponse`1[[ServiceCenterService.Models.ServiceCenter, ServiceCenterService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-24 12:41:47.398 +05:30 [INF] Executed action ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService) in 128.5415ms
+2026-06-24 12:41:47.404 +05:30 [INF] Executed endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService)'
+2026-06-24 12:41:47.408 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5268/api/servicecenter/AGR_017 - 200 null application/json; charset=utf-8 166.2017ms
+2026-06-24 12:42:09.315 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5268/api/servicecenter - null null
+2026-06-24 12:42:09.330 +05:30 [INF] Executing endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService)'
+2026-06-24 12:42:09.335 +05:30 [INF] Route matched with {action = "Get", controller = "ServiceCenter"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller ServiceCenterService.Controllers.ServiceCenterController (ServiceCenterService).
+2026-06-24 12:42:09.374 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__ownerId_0='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[ServiceCenterID], [s].[Capacity], [s].[CenterName], [s].[City], [s].[Contact], [s].[CreatedAt], [s].[FlatNumber], [s].[NearestLandmark], [s].[OwnerId], [s].[Pincode], [s].[ServiceDescription], [s].[State], [s].[Status], [s].[Street]
+FROM [ServiceCenters] AS [s]
+WHERE [s].[OwnerId] = @__ownerId_0 AND [s].[Status] = 1
+2026-06-24 12:42:09.386 +05:30 [INF] Executing OkObjectResult, writing value of type 'ServiceCenterService.DTO.ApiResponse`1[[System.Collections.Generic.List`1[[ServiceCenterService.Models.ServiceCenter, ServiceCenterService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-24 12:42:09.393 +05:30 [INF] Executed action ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService) in 50.776ms
+2026-06-24 12:42:09.399 +05:30 [INF] Executed endpoint 'ServiceCenterService.Controllers.ServiceCenterController.Get (ServiceCenterService)'
+2026-06-24 12:42:09.404 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5268/api/servicecenter - 200 null application/json; charset=utf-8 89.6651ms

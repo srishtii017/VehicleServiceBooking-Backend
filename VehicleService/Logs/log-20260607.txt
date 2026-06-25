@@ -1,0 +1,72 @@
+2026-06-07 00:05:57.561 +05:30 [INF] User profile is available. Using 'C:\Users\2492349\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-07 00:05:58.193 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-07 00:05:58.655 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-07 00:05:58.662 +05:30 [INF] Hosting environment: Development
+2026-06-07 00:05:58.666 +05:30 [INF] Content root path: C:\Users\2492349\OneDrive - Cognizant\Desktop\VehcileServiceBooking\VehicleService
+2026-06-07 00:05:59.799 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-07 00:06:00.347 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 574.0984ms
+2026-06-07 00:06:00.390 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-07 00:06:00.389 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-07 00:06:00.413 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 24.7677ms
+2026-06-07 00:06:00.497 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 107.2535ms
+2026-06-07 00:06:00.571 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-07 00:06:00.600 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.1242ms
+2026-06-07 00:06:27.968 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5179/user/register - null 0
+2026-06-07 00:06:29.340 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5179/user/register - 404 0 null 1372.0295ms
+2026-06-07 00:06:29.349 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5179/user/register, Response status code: 404
+2026-06-07 00:07:19.728 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5179/user/register - application/json 142
+2026-06-07 00:07:19.756 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5179/user/register - 404 0 null 27.4593ms
+2026-06-07 00:07:19.772 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5179/user/register, Response status code: 404
+2026-06-07 00:17:12.027 +05:30 [INF] User profile is available. Using 'C:\Users\2492349\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-07 00:17:12.613 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-07 00:17:13.064 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-07 00:17:13.107 +05:30 [INF] Hosting environment: Development
+2026-06-07 00:17:13.124 +05:30 [INF] Content root path: C:\Users\2492349\OneDrive - Cognizant\Desktop\VehcileServiceBooking\VehicleService
+2026-06-07 00:17:14.082 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-07 00:17:14.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 810.8734ms
+2026-06-07 00:17:14.885 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-07 00:17:14.921 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-07 00:17:14.988 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 66.7202ms
+2026-06-07 00:17:15.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 168.2853ms
+2026-06-07 00:17:15.122 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-07 00:17:15.167 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.2663ms
+2026-06-07 00:17:26.323 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/vehicle - application/json 104
+2026-06-07 00:17:26.438 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-07 00:17:26.447 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-07 00:17:26.450 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/vehicle - 401 0 null 126.8853ms
+2026-06-07 00:18:29.047 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5179/api/vehicle - application/json 104
+2026-06-07 00:18:29.380 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-07 00:18:29.439 +05:30 [INF] Route matched with {action = "AddVehicle", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddVehicle(VehicleService.DTO.VehicleDTO) on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-07 00:18:36.169 +05:30 [INF] Executed DbCommand (333ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 15), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Vehicles] ([Make], [Model], [RegistrationNumber], [UserId], [Year])
+OUTPUT INSERTED.[VehicleId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-06-07 00:18:36.291 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'VehicleService.Models.Vehicle'.
+2026-06-07 00:18:36.332 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.AddVehicle (VehicleService) in 6881.1917ms
+2026-06-07 00:18:36.336 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.AddVehicle (VehicleService)'
+2026-06-07 00:18:36.354 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5179/api/vehicle - 201 null application/json; charset=utf-8 7310.6567ms
+2026-06-07 00:18:58.881 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/5 - application/json 104
+2026-06-07 00:18:58.894 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.Get (VehicleService)'
+2026-06-07 00:18:58.908 +05:30 [INF] Route matched with {action = "Get", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-07 00:18:59.452 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[VehicleId] = @__id_0 AND [v].[UserId] = @__userId_1
+2026-06-07 00:18:59.467 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-06-07 00:18:59.473 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.Get (VehicleService) in 559.501ms
+2026-06-07 00:18:59.477 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.Get (VehicleService)'
+2026-06-07 00:18:59.481 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/5 - 404 null text/plain; charset=utf-8 600.2668ms
+2026-06-07 00:19:13.591 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/9 - application/json 104
+2026-06-07 00:19:13.599 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.Get (VehicleService)'
+2026-06-07 00:19:13.603 +05:30 [INF] Route matched with {action = "Get", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-07 00:19:13.641 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[VehicleId] = @__id_0 AND [v].[UserId] = @__userId_1
+2026-06-07 00:19:13.654 +05:30 [INF] Executing OkObjectResult, writing value of type 'VehicleService.Models.Vehicle'.
+2026-06-07 00:19:13.658 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.Get (VehicleService) in 48.7189ms
+2026-06-07 00:19:13.664 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.Get (VehicleService)'
+2026-06-07 00:19:13.667 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/9 - 200 null application/json; charset=utf-8 75.6295ms

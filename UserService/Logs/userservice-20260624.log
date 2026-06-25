@@ -1,0 +1,88 @@
+2026-06-24 12:39:39.924 +05:30 [INF] HTTP GET /api/user/login responded 401 in 484.9174 ms
+2026-06-24 12:57:09.046 +05:30 [INF] HTTP GET /api/user/login responded 401 in 201.7358 ms
+2026-06-24 13:03:21.236 +05:30 [INF] HTTP POST /api/user/login responded 401 in 5374.9374 ms
+2026-06-24 13:03:39.009 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 13:03:39.431 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 13:03:39.438 +05:30 [INF] HTTP POST /api/user/login responded 200 in 691.3073 ms
+2026-06-24 13:04:37.440 +05:30 [INF] HTTP GET /api/user/1 responded 200 in 163.5525 ms
+2026-06-24 13:12:09.857 +05:30 [INF] HTTP GET /api/user/login responded 401 in 431.1388 ms
+2026-06-24 13:13:20.347 +05:30 [INF] HTTP GET /api/user/1 responded 200 in 1440.3543 ms
+2026-06-24 14:36:48.178 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 14:36:48.198 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 14:36:48.203 +05:30 [INF] HTTP POST /api/user/login responded 200 in 758.2724 ms
+2026-06-24 14:41:48.623 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 14:41:48.626 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 14:41:48.627 +05:30 [INF] HTTP POST /api/user/login responded 200 in 202.7071 ms
+2026-06-24 14:44:01.208 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 14:44:01.209 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 14:44:01.211 +05:30 [INF] HTTP POST /api/user/login responded 200 in 136.9723 ms
+2026-06-24 14:45:28.768 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 14:45:28.772 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 14:45:28.774 +05:30 [INF] HTTP POST /api/user/login responded 200 in 131.7167 ms
+2026-06-24 14:48:45.538 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 14:48:45.540 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 14:48:45.541 +05:30 [INF] HTTP POST /api/user/login responded 200 in 143.6710 ms
+2026-06-24 15:01:27.845 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 15:01:27.847 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 15:01:27.849 +05:30 [INF] HTTP POST /api/user/login responded 200 in 381.6283 ms
+2026-06-24 15:04:10.582 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 15:04:10.584 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 15:04:10.585 +05:30 [INF] HTTP POST /api/user/login responded 200 in 174.1971 ms
+2026-06-24 15:09:57.142 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 15:09:57.144 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 15:09:57.151 +05:30 [INF] HTTP POST /api/user/login responded 200 in 347.8354 ms
+2026-06-24 15:10:40.822 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 15:10:40.825 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 15:10:40.826 +05:30 [INF] HTTP POST /api/user/login responded 200 in 141.5687 ms
+2026-06-24 15:17:07.185 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 15:17:07.193 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 15:17:07.194 +05:30 [INF] HTTP POST /api/user/login responded 200 in 404.8787 ms
+2026-06-24 15:51:01.202 +05:30 [INF] HTTP POST /api/user/register responded 400 in 92.0695 ms
+2026-06-24 15:51:04.069 +05:30 [INF] HTTP POST /api/user/register responded 400 in 1.4647 ms
+2026-06-24 15:51:04.827 +05:30 [INF] HTTP POST /api/user/register responded 400 in 4.8875 ms
+2026-06-24 15:51:05.014 +05:30 [INF] HTTP POST /api/user/register responded 400 in 1.9852 ms
+2026-06-24 15:51:05.245 +05:30 [INF] HTTP POST /api/user/register responded 400 in 1.2437 ms
+2026-06-24 15:51:09.599 +05:30 [INF] HTTP POST /api/user/register responded 400 in 0.8940 ms
+2026-06-24 15:51:10.448 +05:30 [INF] HTTP POST /api/user/register responded 400 in 0.8940 ms
+2026-06-24 15:51:11.177 +05:30 [INF] HTTP POST /api/user/register responded 400 in 1.1966 ms
+2026-06-24 15:51:11.404 +05:30 [INF] HTTP POST /api/user/register responded 400 in 1.2246 ms
+2026-06-24 15:54:39.621 +05:30 [INF] User registered successfully: srishti123@gmail.com
+2026-06-24 15:54:39.622 +05:30 [INF] JWT token generated for user: srishti123@gmail.com
+2026-06-24 15:54:39.652 +05:30 [INF] HTTP POST /api/user/register responded 201 in 637.7426 ms
+2026-06-24 15:55:02.575 +05:30 [INF] User logged in successfully: srishti123@gmail.com
+2026-06-24 15:55:02.578 +05:30 [INF] JWT token generated for user: srishti123@gmail.com
+2026-06-24 15:55:02.579 +05:30 [INF] HTTP POST /api/user/login responded 200 in 237.4311 ms
+2026-06-24 15:57:45.906 +05:30 [INF] HTTP GET /api/user/3 responded 200 in 74.0453 ms
+2026-06-24 15:58:45.678 +05:30 [INF] HTTP GET /api/user/3 responded 200 in 31.6351 ms
+2026-06-24 16:06:07.225 +05:30 [INF] User logged in successfully: srishti123@gmail.com
+2026-06-24 16:06:07.227 +05:30 [INF] JWT token generated for user: srishti123@gmail.com
+2026-06-24 16:06:07.235 +05:30 [INF] HTTP POST /api/user/login responded 200 in 397.1691 ms
+2026-06-24 16:06:12.789 +05:30 [INF] HTTP GET /api/user/3 responded 200 in 7.6719 ms
+2026-06-24 16:26:06.378 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 16:26:06.388 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 16:26:06.389 +05:30 [INF] HTTP POST /api/user/login responded 200 in 430.3011 ms
+2026-06-24 21:03:14.461 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 21:03:14.465 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 21:03:14.472 +05:30 [INF] HTTP POST /api/user/login responded 200 in 506.0751 ms
+2026-06-24 21:45:59.363 +05:30 [INF] HTTP GET /api/user/login responded 401 in 170.2311 ms
+2026-06-24 21:48:08.802 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 21:48:08.835 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 21:48:08.849 +05:30 [INF] HTTP POST /api/user/login responded 200 in 1836.1690 ms
+2026-06-24 21:58:27.588 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 21:58:27.591 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 21:58:27.594 +05:30 [INF] HTTP POST /api/user/login responded 200 in 329.4214 ms
+2026-06-24 21:59:57.965 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 21:59:57.967 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 21:59:57.968 +05:30 [INF] HTTP POST /api/user/login responded 200 in 169.7853 ms
+2026-06-24 22:10:06.570 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 22:10:06.573 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 22:10:06.574 +05:30 [INF] HTTP POST /api/user/login responded 200 in 343.4076 ms
+2026-06-24 22:11:37.883 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 22:11:37.885 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 22:11:37.887 +05:30 [INF] HTTP POST /api/user/login responded 200 in 152.1314 ms
+2026-06-24 22:31:06.374 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 22:31:06.376 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 22:31:06.378 +05:30 [INF] HTTP POST /api/user/login responded 200 in 346.2815 ms
+2026-06-24 22:33:40.816 +05:30 [INF] User logged in successfully: mukulg756@gmail.com
+2026-06-24 22:33:40.820 +05:30 [INF] JWT token generated for user: mukulg756@gmail.com
+2026-06-24 22:33:40.822 +05:30 [INF] HTTP POST /api/user/login responded 200 in 247.8110 ms

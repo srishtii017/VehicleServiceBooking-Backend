@@ -1,0 +1,5 @@
+2026-06-16 17:02:30.311 +05:30 [INF] User profile is available. Using 'C:\Users\2492274\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-16 17:02:30.675 +05:30 [INF] Now listening on: http://localhost:5268
+2026-06-16 17:02:35.127 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5268/weatherforecast - null null
+2026-06-16 17:02:35.963 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5268/weatherforecast - 404 null null 838.3807ms
+2026-06-16 17:02:35.993 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5268/weatherforecast, Response status code: 404

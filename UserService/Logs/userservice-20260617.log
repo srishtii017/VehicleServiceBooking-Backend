@@ -1,0 +1,65 @@
+2026-06-17 01:09:35.397 +05:30 [INF] HTTP GET /api/user/login responded 401 in 637.7867 ms
+2026-06-17 01:11:36.488 +05:30 [INF] HTTP OPTIONS /api/user/register responded 405 in 4.0165 ms
+2026-06-17 01:12:09.918 +05:30 [INF] HTTP OPTIONS /api/user/login responded 405 in 3.7665 ms
+2026-06-17 01:47:48.814 +05:30 [INF] HTTP GET /api/user/login responded 401 in 248.4360 ms
+2026-06-17 01:48:50.205 +05:30 [INF] User registered successfully: geeta123@gmail.com
+2026-06-17 01:48:50.261 +05:30 [INF] JWT token generated for user: geeta123@gmail.com
+2026-06-17 01:48:50.324 +05:30 [INF] HTTP POST /api/user/register responded 201 in 3557.5653 ms
+2026-06-17 01:49:07.764 +05:30 [INF] User logged in successfully: geeta123@gmail.com
+2026-06-17 01:49:07.768 +05:30 [INF] JWT token generated for user: geeta123@gmail.com
+2026-06-17 01:49:07.772 +05:30 [INF] HTTP POST /api/user/login responded 200 in 320.7286 ms
+2026-06-17 01:49:09.215 +05:30 [INF] HTTP GET /api/user/11 responded 200 in 293.1622 ms
+2026-06-17 01:49:47.943 +05:30 [INF] User updated successfully: geeta123@gmail.com
+2026-06-17 01:49:47.946 +05:30 [INF] HTTP PATCH /api/user/11 responded 200 in 51.7626 ms
+2026-06-17 01:54:25.732 +05:30 [INF] User logged in successfully: geeta123@gmail.com
+2026-06-17 01:54:25.735 +05:30 [INF] JWT token generated for user: geeta123@gmail.com
+2026-06-17 01:54:25.737 +05:30 [INF] HTTP POST /api/user/login responded 200 in 232.9179 ms
+2026-06-17 01:54:26.859 +05:30 [INF] HTTP GET /api/user/11 responded 200 in 10.0858 ms
+2026-06-17 01:54:35.892 +05:30 [INF] User deleted successfully: ID 11
+2026-06-17 01:54:35.896 +05:30 [INF] HTTP DELETE /api/user/11 responded 200 in 43.3617 ms
+2026-06-17 01:54:54.254 +05:30 [INF] HTTP POST /api/user/login responded 401 in 8.3370 ms
+2026-06-17 02:05:46.380 +05:30 [INF] User registered successfully: harsh@gmail.com
+2026-06-17 02:05:46.384 +05:30 [INF] JWT token generated for user: harsh@gmail.com
+2026-06-17 02:05:46.388 +05:30 [INF] HTTP POST /api/user/register responded 201 in 615.9084 ms
+2026-06-17 02:06:01.914 +05:30 [INF] User logged in successfully: harsh@gmail.com
+2026-06-17 02:06:01.918 +05:30 [INF] JWT token generated for user: harsh@gmail.com
+2026-06-17 02:06:01.920 +05:30 [INF] HTTP POST /api/user/login responded 200 in 293.6979 ms
+2026-06-17 02:06:03.086 +05:30 [INF] HTTP GET /api/user/12 responded 200 in 13.1022 ms
+2026-06-17 02:07:47.109 +05:30 [INF] User updated successfully: harsh@gmail.com
+2026-06-17 02:07:47.113 +05:30 [INF] HTTP PATCH /api/user/12 responded 200 in 23.4897 ms
+2026-06-17 02:11:55.825 +05:30 [INF] HTTP GET /api/user/12 responded 200 in 37.2591 ms
+2026-06-17 08:49:45.465 +05:30 [INF] HTTP GET /api/user/login responded 401 in 1416.2634 ms
+2026-06-17 08:59:07.399 +05:30 [INF] User registered successfully: mukul@gmail.com
+2026-06-17 08:59:07.447 +05:30 [INF] JWT token generated for user: mukul@gmail.com
+2026-06-17 08:59:07.498 +05:30 [INF] HTTP POST /api/user/register responded 201 in 3276.6208 ms
+2026-06-17 08:59:25.762 +05:30 [INF] User logged in successfully: mukul@gmail.com
+2026-06-17 08:59:25.765 +05:30 [INF] JWT token generated for user: mukul@gmail.com
+2026-06-17 08:59:25.768 +05:30 [INF] HTTP POST /api/user/login responded 200 in 284.2088 ms
+2026-06-17 08:59:27.072 +05:30 [INF] HTTP GET /api/user/13 responded 200 in 214.0939 ms
+2026-06-17 08:59:51.351 +05:30 [INF] HTTP GET /api/user/13 responded 200 in 14.6817 ms
+2026-06-17 09:01:25.799 +05:30 [INF] User logged in successfully: mukul@gmail.com
+2026-06-17 09:01:25.801 +05:30 [INF] JWT token generated for user: mukul@gmail.com
+2026-06-17 09:01:25.803 +05:30 [INF] HTTP POST /api/user/login responded 200 in 236.1050 ms
+2026-06-17 09:01:26.923 +05:30 [INF] HTTP GET /api/user/13 responded 200 in 9.4257 ms
+2026-06-17 09:08:37.628 +05:30 [INF] HTTP GET /api/user/13 responded 200 in 2488.8946 ms
+2026-06-17 09:27:54.335 +05:30 [INF] HTTP GET /api/user/13 responded 200 in 607.0940 ms
+2026-06-17 15:39:37.720 +05:30 [INF] HTTP GET /api/user/login responded 401 in 18.7639 ms
+2026-06-17 15:41:36.193 +05:30 [INF] User registered successfully: ankit@gmail.com
+2026-06-17 15:41:36.198 +05:30 [INF] JWT token generated for user: ankit@gmail.com
+2026-06-17 15:41:36.205 +05:30 [INF] HTTP POST /api/user/register responded 201 in 665.1236 ms
+2026-06-17 15:43:03.765 +05:30 [INF] User logged in successfully: ankit@gmail.com
+2026-06-17 15:43:03.767 +05:30 [INF] JWT token generated for user: ankit@gmail.com
+2026-06-17 15:43:03.769 +05:30 [INF] HTTP POST /api/user/login responded 200 in 243.7216 ms
+2026-06-17 15:43:04.904 +05:30 [INF] HTTP GET /api/user/14 responded 200 in 20.9655 ms
+2026-06-17 15:43:09.645 +05:30 [INF] HTTP GET /api/user/14 responded 200 in 8.2476 ms
+2026-06-17 15:43:44.085 +05:30 [INF] User updated successfully: ankit@gmail.com
+2026-06-17 15:43:44.088 +05:30 [INF] HTTP PATCH /api/user/14 responded 200 in 58.0299 ms
+2026-06-17 15:44:06.329 +05:30 [INF] HTTP GET /api/user/14 responded 200 in 15.3196 ms
+2026-06-17 15:44:14.994 +05:30 [INF] HTTP GET /api/user/14 responded 200 in 32.0831 ms
+2026-06-17 15:44:36.739 +05:30 [INF] User updated successfully: ankit@gmail.com
+2026-06-17 15:44:36.742 +05:30 [INF] HTTP PATCH /api/user/14 responded 200 in 14.6029 ms
+2026-06-17 15:57:45.883 +05:30 [INF] HTTP GET /api/user/14 responded 200 in 37.8642 ms
+2026-06-17 16:00:27.998 +05:30 [INF] HTTP GET /api/user/14 responded 200 in 28.1503 ms
+2026-06-17 16:43:58.368 +05:30 [INF] HTTP GET /api/user/14 responded 401 in 105.1553 ms
+2026-06-17 17:57:58.236 +05:30 [INF] HTTP GET /api/user/login responded 401 in 2.3276 ms
+2026-06-17 18:14:56.486 +05:30 [INF] HTTP GET /api/user/14 responded 401 in 29.8868 ms

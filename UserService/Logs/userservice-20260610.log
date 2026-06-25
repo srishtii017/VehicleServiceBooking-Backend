@@ -1,0 +1,19 @@
+2026-06-10 12:39:31.041 +05:30 [INF] HTTP GET /api/user/login responded 401 in 249.1508 ms
+2026-06-10 12:41:04.010 +05:30 [INF] User registered successfully: akshay@gmail.com
+2026-06-10 12:41:04.068 +05:30 [INF] JWT token generated for user: akshay@gmail.com
+2026-06-10 12:41:04.124 +05:30 [INF] HTTP POST /api/user/register responded 201 in 3555.5216 ms
+2026-06-10 12:41:42.580 +05:30 [INF] HTTP POST /api/user/register responded 400 in 63.6803 ms
+2026-06-10 12:42:19.874 +05:30 [INF] HTTP POST /api/user/login responded 401 in 403.4434 ms
+2026-06-10 12:42:31.552 +05:30 [INF] User logged in successfully: akshay@gmail.com
+2026-06-10 12:42:31.557 +05:30 [INF] JWT token generated for user: akshay@gmail.com
+2026-06-10 12:42:31.560 +05:30 [INF] HTTP POST /api/user/login responded 200 in 252.8790 ms
+2026-06-10 12:43:01.233 +05:30 [INF] HTTP GET /api/user/9 responded 401 in 12.0275 ms
+2026-06-10 12:45:40.442 +05:30 [INF] User logged in successfully: radhika@gmail.com
+2026-06-10 12:45:40.445 +05:30 [INF] JWT token generated for user: radhika@gmail.com
+2026-06-10 12:45:40.447 +05:30 [INF] HTTP POST /api/user/login responded 200 in 238.2699 ms
+2026-06-10 12:46:41.698 +05:30 [INF] HTTP GET /api/user/9 responded 200 in 152.2530 ms
+2026-06-10 12:48:11.737 +05:30 [INF] User logged in successfully: akshay@gmail.com
+2026-06-10 12:48:11.740 +05:30 [INF] JWT token generated for user: akshay@gmail.com
+2026-06-10 12:48:11.743 +05:30 [INF] HTTP POST /api/user/login responded 200 in 280.2723 ms
+2026-06-10 12:50:56.359 +05:30 [INF] Password changed for user: ID 10
+2026-06-10 12:50:56.362 +05:30 [INF] HTTP PATCH /api/user/10/change-password responded 200 in 500.2023 ms

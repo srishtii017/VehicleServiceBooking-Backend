@@ -1,0 +1,52 @@
+2026-06-17 09:03:46.728 +05:30 [INF] User profile is available. Using 'C:\Users\2492349\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-17 09:03:47.509 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-17 09:03:47.906 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-17 09:03:48.002 +05:30 [INF] Hosting environment: Development
+2026-06-17 09:03:48.004 +05:30 [INF] Content root path: C:\Users\2492349\OneDrive - Cognizant\Desktop\VehcileServiceBooking\VehicleService
+2026-06-17 09:03:49.831 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-17 09:03:51.048 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 1277.2326ms
+2026-06-17 09:03:51.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-17 09:03:51.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-17 09:03:51.196 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 60.811ms
+2026-06-17 09:03:51.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 460.0712ms
+2026-06-17 09:03:52.574 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-17 09:03:52.637 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.4243ms
+2026-06-17 16:30:46.792 +05:30 [INF] User profile is available. Using 'C:\Users\2492349\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-17 16:30:47.503 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-17 16:30:47.752 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-17 16:30:47.789 +05:30 [INF] Hosting environment: Development
+2026-06-17 16:30:47.791 +05:30 [INF] Content root path: C:\Users\2492349\OneDrive - Cognizant\Desktop\VehcileServiceBooking\VehicleService
+2026-06-17 16:30:49.457 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-17 16:30:50.899 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 1479.8705ms
+2026-06-17 16:30:50.905 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-17 16:30:51.085 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-17 16:30:51.145 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 60.0665ms
+2026-06-17 16:30:51.370 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 466.2007ms
+2026-06-17 16:30:51.437 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-17 16:30:51.470 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.0382ms
+2026-06-17 18:22:58.684 +05:30 [INF] User profile is available. Using 'C:\Users\2492349\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-17 18:23:00.610 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-17 18:23:00.921 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-17 18:23:00.971 +05:30 [INF] Hosting environment: Development
+2026-06-17 18:23:01.004 +05:30 [INF] Content root path: C:\Users\2492349\OneDrive - Cognizant\Desktop\VehcileServiceBooking\VehicleService
+2026-06-17 18:23:03.322 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-17 18:23:05.733 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 2485.7896ms
+2026-06-17 18:23:05.773 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-17 18:23:05.783 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 11.5293ms
+2026-06-17 18:23:05.796 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-17 18:23:06.031 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 234.5737ms
+2026-06-17 18:23:06.474 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-17 18:23:06.516 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 42.5066ms
+2026-06-17 23:57:44.075 +05:30 [INF] User profile is available. Using 'C:\Users\2492349\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-17 23:57:44.793 +05:30 [INF] Now listening on: http://localhost:5179
+2026-06-17 23:57:45.268 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-17 23:57:45.280 +05:30 [INF] Hosting environment: Development
+2026-06-17 23:57:45.282 +05:30 [INF] Content root path: C:\Users\2492349\OneDrive - Cognizant\Desktop\VehcileServiceBooking\VehicleService
+2026-06-17 23:57:46.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/index.html - null null
+2026-06-17 23:57:47.091 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/index.html - 200 null text/html;charset=utf-8 835.3944ms
+2026-06-17 23:57:47.138 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_vs/browserLink - null null
+2026-06-17 23:57:47.161 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-17 23:57:47.184 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_framework/aspnetcore-browser-refresh.js - 200 14933 application/javascript; charset=utf-8 22.9334ms
+2026-06-17 23:57:47.352 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/_vs/browserLink - 200 null text/javascript; charset=UTF-8 216.9699ms
+2026-06-17 23:57:47.434 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - null null
+2026-06-17 23:57:47.472 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.2124ms

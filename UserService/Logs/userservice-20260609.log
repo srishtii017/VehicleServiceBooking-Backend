@@ -1,0 +1,5 @@
+2026-06-09 09:20:26.765 +05:30 [INF] HTTP GET /api/user/login responded 401 in 1203.4101 ms
+2026-06-09 09:22:53.308 +05:30 [INF] HTTP POST /api/user/register responded 400 in 2715.4110 ms
+2026-06-09 09:24:39.917 +05:30 [INF] User registered successfully: radhika@gmail.com
+2026-06-09 09:24:39.969 +05:30 [INF] JWT token generated for user: radhika@gmail.com
+2026-06-09 09:24:39.997 +05:30 [INF] HTTP POST /api/user/register responded 201 in 940.5047 ms

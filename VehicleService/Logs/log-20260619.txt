@@ -1,0 +1,60 @@
+2026-06-19 00:01:51.964 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-19 00:01:51.995 +05:30 [INF] CORS policy execution successful.
+2026-06-19 00:01:51.999 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:01:52.001 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-19 00:01:52.013 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-19 00:01:52.017 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-19 00:01:52.019 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 13.4052ms
+2026-06-19 00:01:52.022 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:01:52.024 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 61.0048ms
+2026-06-19 00:02:15.851 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-19 00:02:15.856 +05:30 [INF] CORS policy execution successful.
+2026-06-19 00:02:15.858 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:02:15.860 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-19 00:02:15.871 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-19 00:02:15.878 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-19 00:02:15.881 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 15.7789ms
+2026-06-19 00:02:15.884 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:02:15.886 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 34.9164ms
+2026-06-19 00:02:35.241 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-19 00:02:35.247 +05:30 [INF] CORS policy execution successful.
+2026-06-19 00:02:35.248 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:02:35.251 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-19 00:02:35.260 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-19 00:02:35.265 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-19 00:02:35.268 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 12.4943ms
+2026-06-19 00:02:35.270 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:02:35.272 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 32.0659ms
+2026-06-19 00:15:46.192 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-19 00:15:46.209 +05:30 [INF] CORS policy execution successful.
+2026-06-19 00:15:46.215 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:15:46.218 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-19 00:15:46.485 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-19 00:15:46.490 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-19 00:15:46.494 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 272.5348ms
+2026-06-19 00:15:46.496 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:15:46.499 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 308.5236ms
+2026-06-19 00:17:55.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - null null
+2026-06-19 00:17:55.416 +05:30 [INF] CORS policy execution successful.
+2026-06-19 00:17:55.418 +05:30 [INF] Executing endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:17:55.420 +05:30 [INF] Route matched with {action = "GetMyVehicles", controller = "Vehicle"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyVehicles() on controller VehicleService.Controllers.VehicleController (VehicleService).
+2026-06-19 00:17:55.437 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [v].[VehicleId], [v].[Make], [v].[Model], [v].[RegistrationNumber], [v].[UserId], [v].[Year]
+FROM [Vehicles] AS [v]
+WHERE [v].[UserId] = @__userId_0
+2026-06-19 00:17:55.442 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[VehicleService.Models.Vehicle, VehicleService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-19 00:17:55.447 +05:30 [INF] Executed action VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService) in 23.2299ms
+2026-06-19 00:17:55.449 +05:30 [INF] Executed endpoint 'VehicleService.Controllers.VehicleController.GetMyVehicles (VehicleService)'
+2026-06-19 00:17:55.452 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5179/api/vehicle/user-vehicles - 200 null application/json; charset=utf-8 41.0813ms
