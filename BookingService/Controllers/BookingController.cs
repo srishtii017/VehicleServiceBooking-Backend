@@ -99,17 +99,12 @@ namespace BookingService.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize]
-        public async Task<IActionResult> GetBookingById(int id)
+        [Authorize(Roles = "Owner")]
+        public async Task<IActionResult> GetBookingById(string id)
         {
             try
             {
-                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier) ?? User.FindFirst("UserId");
-
-                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
-                    return Unauthorized(new { message = "Invalid or missing user ID in token" });
-
-                var booking = await _bookingService.GetBookingByIdAsync(id, userId);
+                var booking = await _bookingService.GetBookingByIdAsync(id);
 
                 if (booking == null)
                     return NotFound(new { message = "Booking not found" });
@@ -169,5 +164,25 @@ namespace BookingService.Controllers
                 return StatusCode(500, new { message = "Error cancelling booking", error = ex.Message });
             }
         }
+
+        [HttpPatch("update-status")]
+        [Authorize]
+        public async Task<IActionResult> UpdateBookingStatus([FromBody] UpdateStatusDTO statusDto)
+        {
+            try
+            {
+                // We just find the booking and update status without checking strict user ownership restrictions
+                var updated = await _bookingService.UpdateBookingStatusAsync(statusDto.BookingId, statusDto.Status);
+
+                if (!updated)
+                    return BadRequest(new { message = "Booking not found or failed to update status" });
+
+                return Ok(new { message = "Booking status updated successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error updating status", error = ex.Message });
+            }
+        } 
     }
 }

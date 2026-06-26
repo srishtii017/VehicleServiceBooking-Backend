@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -78,6 +78,22 @@
       {
         "Name": "updateDto",
         "Type": "BookingService.DTO.UpdateBookingDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookingService.Controllers.BookingsController",
+    "Method": "UpdateBookingStatus",
+    "RelativePath": "api/Bookings/update-status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "statusDto",
+        "Type": "BookingService.DTO.UpdateStatusDTO",
         "IsRequired": true
       }
     ],

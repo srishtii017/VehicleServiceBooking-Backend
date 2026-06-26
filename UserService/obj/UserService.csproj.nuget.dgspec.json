@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj": {}
+    "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VB_BACK_NEW\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj": {
+    "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VB_BACK_NEW\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VB_BACK_NEW\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj",
+        "projectPath": "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VB_BACK_NEW\\VehicleServiceBooking-Backend\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\2492274\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VehicleServiceBooking-Backend\\UserService\\obj\\",
+        "outputPath": "C:\\Users\\2492274\\OneDrive - Cognizant\\Desktop\\VB_BACK_NEW\\VehicleServiceBooking-Backend\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

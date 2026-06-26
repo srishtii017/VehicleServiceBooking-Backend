@@ -74,14 +74,11 @@ namespace BookingService.Services
             }
         }
 
-        public async Task<Booking?> GetBookingByIdAsync(int id, int userId)
+        public async Task<Booking?> GetBookingByIdAsync(string id)
         {
             try
             {
-                var booking = await _context.Bookings.FindAsync(id);
-                if (booking == null || booking.UserId != userId)
-                    return null;
-
+                var booking = await _context.Bookings.FirstOrDefaultAsync(b => b.BookingId == id);
                 return booking;
             }
             catch (Exception ex)
@@ -196,6 +193,24 @@ namespace BookingService.Services
             catch (Exception ex)
             {
                 throw new Exception($"Error fetching bookings : {ex.Message}");
+            }
+        }
+
+        public async Task<bool> UpdateBookingStatusAsync(string bookingId, string newStatus)
+        {
+            try
+            {
+                var booking = await _context.Bookings.FindAsync(bookingId);
+                if (booking == null) return false;
+
+                booking.Status = newStatus;
+
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error updating booking status: {ex.Message}");
             }
         }
 
