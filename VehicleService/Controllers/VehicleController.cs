@@ -62,9 +62,16 @@ namespace VehicleService.Controllers
             var userId = GetUserId();
             if (userId == null) return Unauthorized("UserId claim missing or invalid.");
 
+            var existing = await _vehicleService.GetMyVehicles(userId.Value);
+            if (existing.Any(v => v.RegistrationNumber == vehicleDto.RegistrationNumber))
+            {
+                return BadRequest("A vehicle with this registration number already exists.");
+            }
+
             var vehicle = await _vehicleService.AddVehicle(vehicleDto, userId.Value);
             return CreatedAtAction(nameof(Get), new { id = vehicle.VehicleId }, vehicle);
         }
+
 
         // PATCH api/Vehicle/5
         [HttpPatch("{id}")]
