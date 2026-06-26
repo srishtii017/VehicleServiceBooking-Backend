@@ -99,7 +99,7 @@ namespace BookingService.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize(Roles = "Owner")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetBookingById(string id)
         {
             try
